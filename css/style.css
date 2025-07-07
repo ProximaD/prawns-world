@@ -164,8 +164,11 @@ header{
 .nav__close{
     display: flex;
     color: var(--orange-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
+}
+.nav__toggle:hover{
+    color: var(--first-color);
 }
 /* Navigation for mobile devices */
 @media screen and (max-width: 1150px){
