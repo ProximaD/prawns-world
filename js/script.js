@@ -27,3 +27,24 @@ const navMenu = document.getElementById('nav-menu'),
 
         navLink.forEach(n => n.addEventListener('click', linkAction))
         
+        /*CHANGE BACKGROUND HEADER*/
+        const scrollHeader = () => {
+            const header = document.getElementById('header')
+            if (this.scrollY >= 50) header.classList.add('scroll-header')
+            else header.classList.remove('scroll-header')
+        }
+        window.addEventListener('scroll', scrollHeader)
+
+        /*SWIPER MENU*/
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        })
