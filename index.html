@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
 
     <!--========================================= SWIPER CSS ========================================-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
     <!--========================================= CSS ========================================-->
     <link rel="stylesheet" href="css/style.css">
@@ -111,15 +111,6 @@
 
             <div class="menu__container container grid">
                 <div class="menu__item">
-                    <img src="images/menu_02.jpg" alt="Grilled Prawns" class="menu__image">
-                    <h3 class="menu__title">Grilled Prawns</h3>
-                    <p class="menu__description">Succulent prawns marinated in a zesty blend of herbs and spices, grilled to perfection.</p>
-                    <span class="menu__price">$18.99</span>
-                </div>
-            </div>
-
-            <div class="menu__container container grid">
-                <div class="menu__item">
                     <img src="images/menu_03.jpg" alt="Prawn Pasta" class="menu__image">
                     <h3 class="menu__title">Prawn Pasta</h3>
                     <p class="menu__description">A delightful pasta dish tossed with prawns, garlic, and a creamy sauce.</p>
@@ -190,10 +181,70 @@
                 </div>
             </div>
         </section>
+
+        <!--============================================ REVIEWS ============================================-->
+        <section class="reviews section" id="reviews">
+            <h2 class="section__title">Customer Reviews</h2>
+            <div class="reviews__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews__card">
+                        <img src="images/review_01.jpg" alt="Customer 1" class="reviews__img">
+                        <h3 class="reviews__name">John Doe</h3>
+                        <p class="reviews__description">"The prawns were absolutely delicious! The best seafood I've ever had."</p>
+                    </div>
+
+                    <div class="swiper-slide reviews__card">
+                        <img src="images/review_02.jpg" alt="Customer 2" class="reviews__img">
+                        <h3 class="reviews__name">Jane Smith</h3>
+                        <p class="reviews__description">"Amazing flavors and great service. Highly recommend Prawns World!"</p>
+                    </div>
+
+                    <div class="swiper-slide reviews__card">
+                        <img src="images/review_03.jpg" alt="Customer 3" class="reviews__img">
+                        <h3 class="reviews__name">Emily Johnson</h3>
+                        <p class="reviews__description">"A seafood lover's paradise! The prawns were cooked to perfection."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--============================================ CONTACT ============================================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Us</h2>
+            <div class="contact__container container">
+                <form action="#" class="contact__form">
+                    <div class="contact__group">
+                        <input type="text" class="contact__input" placeholder="Your Name" required>
+                    </div>
+                    <div class="contact__group">
+                        <input type="email" class="contact__input" placeholder="Your Email" required>
+                    </div>
+                    <div class="contact__group">
+                        <textarea class="contact__input" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+        </section>
     </main>
 
-
     <!--============================================ FOOTER ===========================================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h2 class="footer__title">Prawns World</h2>
+            <p class="footer__description">The best place to enjoy delicious prawns and seafood dishes.</p>
+            <ul class="footer__links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer__credits">
+            <p>Designed by Sandra Lavenda</p>
+        </div>
+    </footer>
 
     <!--=============================================== JS =====================================================-->
     <script src="js/script.js"></script>
