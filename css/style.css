@@ -385,12 +385,15 @@ header{
     padding-top: 6rem;
   }
 
-  .about__img {
-    justify-self: end;
-    width: 350px;
-    max-width: 100%;
-    /* Optional: add a nice drop shadow for the image */
-    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  .about__image{
+  width: 520px;
+  height: 520px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   }
 
   .about__data {
@@ -430,6 +433,9 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; 
+  min-height: 100%;       
+  height: 100%;
 }
 
 .menu__item:hover {
@@ -444,6 +450,9 @@ header{
   border-radius: 50%;
   margin-bottom: 1.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu__title {
@@ -466,6 +475,80 @@ header{
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   margin-top: auto;
+}
+
+/* Swiper main container */
+.swiper {
+  width: 100%;
+  padding: 2rem 0 3rem 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Swiper slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+/* Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--first-color);
+  background: rgba(255,255,255,0.85);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background 0.3s, color 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: var(--first-color);
+  color: var(--white-color);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Swiper pagination bullets */
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -2rem;
+}
+
+.swiper-pagination-bullet {
+  width: 1rem;
+  height: .15rem;
+  border-radius: 0.5rem;
+  background-color: var(--text-color);
+  opacity: 1;
+  margin: 0 0.25rem;
+  transition: background-color .3s, width .3s;
+}
+
+.swiper-pagination-bullet-active {
+  width: 1.5rem;
+  background-color: var(--first-color);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 700px) {
+  .swiper {
+    padding: 1rem 0 2rem 0;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 /* Responsive grid for large screens */
@@ -581,9 +664,4 @@ header{
     background-color: hsl(228, 4%, 35%);
 } 
 
-
-/*=============== SCROLL UP ===============*/
-
-
-/* Show Scroll Up */
 

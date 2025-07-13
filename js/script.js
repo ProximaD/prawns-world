@@ -48,3 +48,27 @@ const navMenu = document.getElementById('nav-menu'),
                 clickable: true,
             },
         })
+
+
+/*=============== INITIALIZE SWIPER JS ===============*/
+const menuSwiper = new Swiper('.menu__swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: '.menu-swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.menu-swiper-button-next',
+        prevEl: '.menu-swiper-button-prev',
+    },
+    breakpoints: {
+        700: {
+            slidesPerView: 2,
+        },
+        1150: {
+            slidesPerView: 3,
+        }
+    }
+});
