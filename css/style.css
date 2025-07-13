@@ -150,7 +150,7 @@ header{
 }
 
 .nav__logo{
-    color: var(--orange-color);
+    color: var(--black-color);
     font-family: var(--second-font);
     font-weight: var(--font-semi-bold);
     font-size: var(--h1-font-size);
@@ -293,7 +293,7 @@ header{
   }
 
   .nav__logo {
-    color: var(--first-color);
+    color: var(--black-color);
     font-family: var(--second-font);
     font-weight: var(--font-semi-bold);
     font-size: 2rem;
@@ -324,7 +324,7 @@ header{
   }
 
   .nav__link {
-    color: var(--dark-color);
+    color: var(--black-color);
     font: var(--font-medium) 1.1rem var(--second-font);
     letter-spacing: 1px;
     transition: color .3s;
