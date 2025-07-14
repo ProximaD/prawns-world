@@ -493,7 +493,7 @@ header{
 
 .item__title {
   color: var(--black-color);
-  font-size: var(--big-font-size);
+  font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: 0.5rem;
   text-align: center;
