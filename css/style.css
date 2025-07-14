@@ -241,7 +241,7 @@ header{
   display: grid;
   justify-items: center;
   justify-self: center;
-  width: 100%;
+  width: 50%;
 }
 
 .home__data{
@@ -360,15 +360,16 @@ header{
 
 /*=============== ABOUT US ===============*/
 .about__container{
-    padding-top: 2.5rem;
-    row-gap: 2rem;
+  padding-top: 2.5rem;
+  row-gap: 2rem;
 }
 
 .about__img {
   justify-self: end;
+  border-radius: 3.5rem;
   width: 350px;
-  max-width: 100%;
-  border-radius: 1.5rem;
+  height: 350px;
+  border-radius: 3.5rem;
   box-shadow: 0 12px 40px rgba(30, 30, 30, 0.12), 0 2px 8px rgba(0,0,0,0.08);
   border: 4px solid var(--white-color);
   background: linear-gradient(135deg, var(--body-color) 60%, var(--white-color) 100%);
@@ -391,7 +392,7 @@ header{
 
 
 .about__description{
-    font-family: var(--accent-font);
+    font-family: var(--second-font);
     font-size: var(--h2-font-size);
     margin-bottom: 3rem;
 }
@@ -408,6 +409,7 @@ header{
   .about__image{
   width: 520px;
   height: 520px;
+  border-radius: 3.5rem;
   object-fit: cover;
   margin-bottom: 1.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -422,14 +424,20 @@ header{
   }
 
   .about__title {
-    text-align: left;
-    font-size: var(--big-font-size);
-    margin-bottom: 2rem;
+  color: var(--black-color);
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-semi-bold);
+  text-align: center;
+  line-height: 110%;
+  margin-bottom: 2.5rem;
   }
 
   .about__description {
     font-size: var(--h2-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-regular);
     text-align: left;
+    line-height: 1.6;
     margin-bottom: 2rem;
   }
 }
