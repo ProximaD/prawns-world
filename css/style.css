@@ -476,8 +476,16 @@ header{
 }
 
 .menu__title {
-  color: var(--first-color);
-  font-size: var(--h2-font-size);
+  color: var(--black-color);
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.item__title {
+  color: var(--black-color);
+  font-size: var(--big-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: 0.5rem;
   text-align: center;
@@ -603,7 +611,7 @@ header{
 }
 .contact__title{
   color: var(--black-color);
-  font-size: var(--h1-font-size);
+  font-size: var(--biggest-font-size);
   font-weight: var(--font-semi-bold);
   text-align: center;
   line-height: 110%;
