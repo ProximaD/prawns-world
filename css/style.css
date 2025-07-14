@@ -274,8 +274,28 @@ header{
 
 /*=============== MEDIA QUERIES - HEADER & NAV ===============*/
 @media screen and (min-width: 1150px) {
+  .container{
+      margin-inline: auto;
+    }
+
+  .section{
+      padding-block: 7rem 2rem;
+    }
+
+  .section__title{
+      margin-bottom: 1.5rem;
+    }
+
+  .nav{
+      height: calc(var(--header-height) + 2rem);
+    }
+
+  .nav__toggle,
+  .nav__close{
+      display: none;
+    }
+
   .header {
-    background: rgba(255, 255, 255, 0.5); /* semi-transparent white */
     box-shadow: 0 2px 16px rgba(0,0,0,0.07);
     backdrop-filter: blur(12px);
     height: var(--header-height);
@@ -522,6 +542,7 @@ header{
 /* Swiper pagination bullets */
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: -2rem;
+  text-align: center;
 }
 
 .swiper-pagination-bullet {
@@ -532,6 +553,7 @@ header{
   opacity: 1;
   margin: 0 0.25rem;
   transition: background-color .3s, width .3s;
+
 }
 
 .swiper-pagination-bullet-active {
